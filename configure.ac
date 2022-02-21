@@ -3,7 +3,7 @@
 
 AC_PREREQ([2.68])
 AC_INIT([ibus-avro], [1.1], [sarim2005@gmail.com])
-AM_INIT_AUTOMAKE(ibus-avro, 1.1)
+AM_INIT_AUTOMAKE
 AC_OUTPUT(Makefile)
 # Checks for programs.
 

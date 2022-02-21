@@ -21,11 +21,17 @@ using the source code in this repository.
 		gjs
 		ibus
 
+		__For Fedora 35__
+		sudo dnf install git automake autoconf make gjs ibus ibus-devel
+
+
     __For e.g. Debian 10 "buster"__
 
     As root, do:
 
 		apt install git libibus-1.0-dev automake autoconf make gjs ibus
+
+
 
     __For other linux distributions__
 
@@ -41,6 +47,13 @@ using the source code in this repository.
 		./configure --prefix=/usr
 		sudo make install
 
+		__Note for Fedora 35__
+		Modify "configure.ac" file if you encounter errors and run from "aclocal" command
+		AM_INIT_AUTOMAKE(ibus-avro, 1.1)
+		to
+		AM_INIT_AUTOMAKE
+
+
 
 ## Usage
  1. Run __IBus__ (`Applications -> System Tools -> IBus`) from _Dash_
@@ -52,9 +65,20 @@ using the source code in this repository.
  7. Now Press `Ctrl+Space` to toggle between _English_ and _Avro_ (Bengali)
  8. Enjoy __Avro Phonetic!__
 
+## Usage Fedora 35
+  1. Log out and log back in. Better if you restart your machine.
+	2. Go to `Settings -> Keyboard -> Input Sources`
+	3. Click `+` to add new language.
+	4. Click the ':' and start typing `avro`
+	5. From Bangla(Bangladesh) select `Avro-Phonetic`
+  6. Now Press `Ctrl+Space` to toggle between _English_ and _Avro_ (Bengali)
+  7. Enjoy __Avro Phonetic!__
+
+
+
 
 ## Contributors
- 
+
 __IBus Engine__ by __Sarim Khan__ <sarim2005@gmail.com>
 
 [__Avro JavaScript Phonetic Library__](https://github.com/torifat/jsAvroPhonetic) by [__Rifat Nabi__](https://github.com/torifat)
@@ -62,3 +86,5 @@ __IBus Engine__ by __Sarim Khan__ <sarim2005@gmail.com>
 __Avro Phonetic Dictionary Search Library__ by [__Mehdi Hasan Khan__](https://github.com/omicronlab)
 
 _Licensed under Mozilla Public License 2.0 ("MPL"), an open source/free software license._
+
+__Fedora 35 instructions__ by __M. Shahnoor Rahman__ <shahnoor3pl@gmail.com>
