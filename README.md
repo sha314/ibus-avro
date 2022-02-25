@@ -24,6 +24,14 @@ using the source code in this repository.
 		__For Fedora 35__
 		sudo dnf install git automake autoconf make gjs ibus ibus-devel
 
+		__AlmaLinux 8.5__
+		sudo dnf install git automake autoconf make gjs ibus
+		sudo dnf install epel-release
+		sudo dnf install yum-utils
+		sudo dnf config-manager --set-enabled powertools
+		sudo dnf update
+		sudo dnf install ibus-devel
+
 
     __For e.g. Debian 10 "buster"__
 
@@ -68,6 +76,15 @@ using the source code in this repository.
 ## Usage Fedora 35
   1. Log out and log back in. Better if you restart your machine.
 	2. Go to `Settings -> Keyboard -> Input Sources`
+	3. Click `+` to add new language.
+	4. Click the ':' and start typing `avro`
+	5. From Bangla(Bangladesh) select `Avro-Phonetic`
+  6. Now Press `Ctrl+Space` to toggle between _English_ and _Avro_ (Bengali)
+  7. Enjoy __Avro Phonetic!__
+
+## Usage AlmaLinux 8.5
+  1. Log out and log back in. Better if you restart your machine.
+	2. Go to `Settings -> Region and Language -> Input Sources`
 	3. Click `+` to add new language.
 	4. Click the ':' and start typing `avro`
 	5. From Bangla(Bangladesh) select `Avro-Phonetic`
