@@ -32,6 +32,12 @@ using the source code in this repository.
 		sudo dnf update
 		sudo dnf install ibus-devel
 
+		__AlmaLinux 9.0__
+		sudo dnf update
+		sudo dnf config-manager --set-enabled crb
+		sudo dnf install git automake autoconf make gjs ibus
+		sudo dnf install ibus-devel
+
 
     __For e.g. Debian 10 "buster"__
 
@@ -73,7 +79,7 @@ using the source code in this repository.
  7. Now Press `Ctrl+Space` to toggle between _English_ and _Avro_ (Bengali)
  8. Enjoy __Avro Phonetic!__
 
-## Usage Fedora 35
+## Usage Fedora 35, AlmaLinux 9
   1. Log out and log back in. Better if you restart your machine.
 	2. Go to `Settings -> Keyboard -> Input Sources`
 	3. Click `+` to add new language.
@@ -104,4 +110,4 @@ __Avro Phonetic Dictionary Search Library__ by [__Mehdi Hasan Khan__](https://gi
 
 _Licensed under Mozilla Public License 2.0 ("MPL"), an open source/free software license._
 
-__Fedora 35 instructions__ by __M. Shahnoor Rahman__ <shahnoor3pl@gmail.com>
+__Fedora 35, AlmaLinux instructions__ by __M. Shahnoor Rahman__ <shahnoor3pl@gmail.com>
